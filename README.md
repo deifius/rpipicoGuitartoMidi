@@ -19,7 +19,7 @@ The guitar signal is conditioned using a resistor-capacitor (RC) high-pass filte
     css
     Copy code
         Guitar     R1      C1       +      R2     ADC
-      ----->--/\/\--||---o--+--/\/\---o
+          ----->--/\/\--||---o--+--/\/\---o
                        |       |         |
                        +3.3V   GND      GND
 Setup and Usage

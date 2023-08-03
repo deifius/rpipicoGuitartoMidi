@@ -1,0 +1,25 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{circuitikz}
+    % Guitar Signal
+    \draw (0,0) node[ocirc, label=left:Guitar]{} to[short, o-] ++(1,0);
+
+    % High-pass Filter (R1, C1)
+    \draw (1,0) to[R, l=$R1\,10\,\text{k}\Omega$] ++(2,0) to[C, l=$C1\,1\,\mu\text{F}$] ++(2,0);
+
+    % Op-Amp Buffer (Optional)
+    \draw (5,0) node[op amp, xscale=-1] (opamp) {};
+    \draw (opamp.+) to[short, -*] ++(0,-1) node[ground]{};
+    \draw (opamp.-) -- (opamp.out);
+    \draw (opamp.out) to[short, *-o] ++(1,0) node[right=1mm]{$+$};
+
+    % DC Bias (R2)
+    \draw (6,0) -- ++(0,-1) to[R, l=$R2\,10\,\text{k}\Omega$] ++(0,-1) node[ground]{};
+    \draw (6,0) -- ++(0,1) node[vcc, label=above:+3.3V]{};
+
+    % ADC Input
+    \draw (6,0) -- ++(1,0) node[ocirc, label=right:ADC]{} ;
+\end{circuitikz}
+\end{document}

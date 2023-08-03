@@ -15,12 +15,13 @@ Prototyping Board/Breadboard and Wires: For connecting components.
 Circuit Diagram
 The guitar signal is conditioned using a resistor-capacitor (RC) high-pass filter and a DC biasing circuit. An optional op-amp buffer can be used to match impedance.
 
-css
-Copy code
-    Guitar     R1      C1       +      R2     ADC
-  ----->--/\/\--||---o--+--/\/\---o
-                   |       |         |
-                   +3.3V   GND      GND
+
+    css
+    Copy code
+        Guitar     R1      C1       +      R2     ADC
+      ----->--/\/\--||---o--+--/\/\---o
+                       |       |         |
+                       +3.3V   GND      GND
 Setup and Usage
 Connect the Components: Follow the circuit diagram to connect the guitar to the Raspberry Pi Pico's ADC.
 Install MicroPython: Ensure that the Pico is running MicroPython.

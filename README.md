@@ -1,8 +1,9 @@
 # rpipicoGuitartoMidi
-an exercise in managing GPT4 code interpreter to produce a pitch tracker for guitar installation
+GPT4 code interpreter to produce a pitch tracker for guitar installation
 
 
 Raspberry Pi Pico Guitar Pitch Detection
+
 This project utilizes the Raspberry Pi Pico to analyze the pitch of a guitar with active piezo pickups and send corresponding MIDI messages. The detected pitch is converted into MIDI Note On, Note Off, Pitch Bend, and Aftertouch messages, allowing for expressive control over other MIDI devices or software.
 
 Components

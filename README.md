@@ -9,7 +9,7 @@ This project utilizes the Raspberry Pi Pico to analyze the pitch of a guitar wit
 Components:
 
     Raspberry Pi Pico: Microcontroller running MicroPython.
-    Guitar with Active Piezo Pickups: Source of the audio signal.
+    Guitar: Source of the audio signal.
     Resistors: 10kΩ (2x) for signal conditioning.
     Capacitor: 1μF non-polarized for AC coupling.
     Operational Amplifier (Optional): Buffer stage (e.g., Texas Instruments' TLV9061).
